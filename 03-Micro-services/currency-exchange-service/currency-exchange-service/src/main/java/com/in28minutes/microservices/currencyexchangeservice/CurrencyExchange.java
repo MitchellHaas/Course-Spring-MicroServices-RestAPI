@@ -11,11 +11,11 @@ public class CurrencyExchange {
 
 	@Id
 	private Long id;
-	
-	@Column(name="currency_from")
+
+	@Column(name = "currency_from")
 	private String from;
-	
-	@Column(name="currency_to")
+
+	@Column(name = "currency_to")
 	private String to;
 	private BigDecimal conversionMultiple;
 	private String environment;
@@ -63,18 +63,12 @@ public class CurrencyExchange {
 		this.conversionMultiple = conversionMultiple;
 	}
 
-	public String getEnviornment() {
+	public String getEnvironment() {
 		return environment;
 	}
 
-	public void setEnviornment(String enviornment) {
-		this.environment = enviornment;
-	}
-
-	@Override
-	public String toString() {
-		return "CurrencyExchange [id=" + id + ", from=" + from + ", to=" + to + ", conversionMultiple="
-				+ conversionMultiple + "]";
+	public void setEnvironment(String environment) {
+		this.environment = environment;
 	}
 
 }
